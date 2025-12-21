@@ -45,9 +45,9 @@ const Navigation1 = (props) => {
                 </a>
               </li>
               <li>
-                <a href="/proof-of-work">
+                <a href="/proof">
                   <div className="navigation-link">
-                    <span>Proof of Work</span>
+                    <span>Proof</span>
                   </div>
                 </a>
               </li>
