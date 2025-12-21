@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 
@@ -47,106 +48,116 @@ const Footer = (props) => {
               <h2 className="footer-heading">Capabilities</h2>
               <ul className="footer-link-list">
                 <li className="footer-link-item">
-                  <a href="/services">
-                    <div className="footer-action-link">
-                      <span>Execution Governance</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M7 7h10v10M7 17L17 7"></path>
-                      </svg>
-                    </div>
-                  </a>
-                </li>
-                <li className="footer-link-item">
-                  <a href="/approach">
-                    <div className="footer-action-link">
-                      <span>Architecture Clarity</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M7 7h10v10M7 17L17 7"></path>
-                      </svg>
-                    </div>
-                  </a>
-                </li>
-                <li className="footer-link-item">
-                  <a href="/proof-of-work">
-                    <div className="footer-action-link">
-                      <span>Compliance-by-Design</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M7 7h10v10M7 17L17 7"></path>
-                      </svg>
-                    </div>
-                  </a>
-                </li>
-                <li className="footer-link-item">
-                  <a href="/insights">
-                    <div className="footer-action-link">
-                      <span>Insights &amp; Briefings</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M7 7h10v10M7 17L17 7"></path>
-                      </svg>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+                <Link to="/services">
+                  <div className="footer-action-link">
+                    <span>Execution Governance</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M7 7h10v10M7 17L17 7"></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="footer-link-item">
+                <Link to="/approach">
+                  <div className="footer-action-link">
+                    <span>Architecture Clarity</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M7 7h10v10M7 17L17 7"></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="footer-link-item">
+                <Link to="/proof">
+                  <div className="footer-action-link">
+                    <span>Compliance-by-Design</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M7 7h10v10M7 17L17 7"></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="footer-link-item">
+                <Link to="/insights">
+                  <div className="footer-action-link">
+                    <span>Insights &amp; Briefings</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M7 7h10v10M7 17L17 7"></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+            </ul>
+          </nav>
             <div className="footer-column">
               <h2 className="footer-heading">Engagement</h2>
               <div className="footer-contact-block">
                 <p className="footer-contact-text section-content">
                   Direct coordination for Board-level and C-Suite inquiries.
                 </p>
-                <a href="/contact">
+                <Link to="/contact">
                   <div className="footer-cta btn btn-primary btn-lg">
                     <span>Initiate Consultation</span>
                   </div>
-                </a>
+                </Link>
               </div>
-              <div className="footer-visual-accent">
-                <img
-                  src="https://images.pexels.com/photos/1160831/pexels-photo-1160831.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
-                  alt="Minimalist architectural geometry"
-                  loading="lazy"
-                  className="footer-accent-image"
-                />
+              <div className="footer-visual-accent" aria-hidden="true">
+                <svg
+                  viewBox="0 0 160 160"
+                  className="footer-accent-graphic"
+                  role="presentation"
+                >
+                  <defs>
+                    <linearGradient id="footGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+                      <stop offset="0%" stopColor="#1e3a5f" stopOpacity="0.85" />
+                      <stop offset="100%" stopColor="#0b66c2" stopOpacity="0.5" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="160" height="160" rx="18" fill="url(#footGrad)" />
+                  <circle cx="50" cy="50" r="28" fill="none" stroke="#ffffff" strokeWidth="4" opacity="0.65" />
+                  <circle cx="110" cy="110" r="38" fill="none" stroke="#ffffff" strokeWidth="3" opacity="0.4" />
+                  <path d="M34 118 L126 42" stroke="#b9d5f5" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
+                </svg>
               </div>
             </div>
           </div>
@@ -156,16 +167,16 @@ const Footer = (props) => {
                 &amp;copy; 2025 Regression Consulting Ltd.
               </span>
               <div className="footer-legal-links">
-                <a href="/privacy">
+                <Link to="/privacy">
                   <div className="footer-legal-link">
                     <span>Privacy Policy</span>
                   </div>
-                </a>
-                <a href="/terms">
+                </Link>
+                <Link to="/terms">
                   <div className="footer-legal-link">
                     <span>Terms of Engagement</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="footer-status">

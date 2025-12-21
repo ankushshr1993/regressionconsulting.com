@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 
@@ -9,7 +10,7 @@ const Navigation = (props) => {
     <div className="navigation-container1">
       <nav className="navigation-root">
         <div className="navigation-container">
-          <a href="/">
+          <Link to="/">
             <div
               aria-label="Regression Consulting Home"
               className="navigation-brand"
@@ -20,57 +21,57 @@ const Navigation = (props) => {
               <span className="navigation-logo-divider"></span>
               <span className="navigation-logo-tagline">Consulting</span>
             </div>
-          </a>
+          </Link>
           <div className="navigation-desktop-menu">
             <ul className="navigation-links">
               <li>
-                <a href="/">
+                <Link to="/">
                   <div className="navigation-link">
                     <span>Home</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services">
+                <Link to="/services">
                   <div className="navigation-link">
                     <span>Services</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/approach">
+                <Link to="/approach">
                   <div className="navigation-link">
                     <span>Approach</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/proof-of-work">
+                <Link to="/proof">
                   <div className="navigation-link">
-                    <span>Proof of Work</span>
+                    <span>Proof</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about">
+                <Link to="/about">
                   <div className="navigation-link">
                     <span>About</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/insights">
+                <Link to="/insights">
                   <div className="navigation-link">
                     <span>Insights</span>
                   </div>
-                </a>
+                </Link>
               </li>
             </ul>
-            <a href="/contact">
+            <Link to="/contact">
               <div className="navigation-cta btn btn-primary btn-sm">
                 <span>Contact</span>
               </div>
-            </a>
+            </Link>
           </div>
           <button
             id="navToggle"
@@ -99,7 +100,7 @@ const Navigation = (props) => {
       </nav>
       <dialog id="mobileOverlay" className="navigation-mobile-overlay">
         <div className="navigation-overlay-header">
-          <a href="/">
+          <Link to="/">
             <div
               aria-label="Regression Consulting Home"
               className="navigation-brand"
@@ -108,7 +109,7 @@ const Navigation = (props) => {
                 Regression
               </span>
             </div>
-          </a>
+          </Link>
           <button
             id="navClose"
             aria-label="Close navigation menu"
@@ -134,50 +135,50 @@ const Navigation = (props) => {
         <div className="navigation-overlay-content">
           <ul className="navigation-mobile-links">
             <li>
-              <a href="/">
+              <Link to="/">
                 <div className="navigation-mobile-link">
                   <span>Home</span>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services">
+              <Link to="/services">
                 <div className="navigation-mobile-link">
                   <span>Services</span>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/approach">
+              <Link to="/approach">
                 <div className="navigation-mobile-link">
                   <span>Approach</span>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/proof-of-work">
+              <Link to="/proof">
                 <div className="navigation-mobile-link">
-                  <span>Proof of Work</span>
+                  <span>Proof</span>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about">
+              <Link to="/about">
                 <div className="navigation-mobile-link">
                   <span>About</span>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/insights">
+              <Link to="/insights">
                 <div className="navigation-mobile-link">
                   <span>Insights</span>
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="navigation-mobile-footer">
-            <a href="/contact">
+            <Link to="/contact">
               <div className="navigation-mobile-cta btn btn-primary btn-lg">
                 <span>Get in Touch</span>
                 <svg
@@ -196,7 +197,7 @@ const Navigation = (props) => {
                   ></path>
                 </svg>
               </div>
-            </a>
+            </Link>
             <div className="navigation-mobile-meta">
               <p className="section-content">
                 Operator-led technology execution.

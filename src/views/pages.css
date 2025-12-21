@@ -1,0 +1,179 @@
+.page-shell {
+  min-height: 100vh;
+  background: var(--color-surface);
+}
+
+.page-hero {
+  display: grid;
+  gap: var(--spacing-3xl);
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.page-hero-visual {
+  position: relative;
+  min-height: 260px;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  background: radial-gradient(circle at 20% 20%, #d2e5ff 0%, transparent 35%),
+    radial-gradient(circle at 80% 0%, #b8d0ff 0%, transparent 38%),
+    linear-gradient(135deg, #0b66c2 0%, #1e3a5f 60%);
+  box-shadow: var(--shadow-level-3);
+}
+
+.page-hero-visual svg {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+}
+
+.page-hero-content h1 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-hero-content p {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.page-grid {
+  display: grid;
+  gap: var(--spacing-2xl);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: var(--spacing-2xl);
+}
+
+.summary-card {
+  padding: var(--spacing-2xl);
+  border: var(--divider-value);
+  border-radius: var(--border-radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-level-1);
+}
+
+.summary-card h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.list-grid {
+  display: grid;
+  gap: var(--spacing-xl);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: var(--spacing-xl);
+}
+
+.list-tile {
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  border: var(--divider-value);
+  background: var(--color-surface-elevated);
+}
+
+.pill {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-full);
+  background: color-mix(in oklab, var(--color-primary) 10%, transparent);
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+}
+
+.section-block {
+  margin: var(--spacing-4xl) auto;
+  padding: 0 var(--spacing-xl);
+  max-width: var(--content-max-width);
+}
+
+.section-block h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.two-column {
+  display: grid;
+  gap: var(--spacing-2xl);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.accent-panel {
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid color-mix(in oklab, var(--color-primary) 20%, transparent);
+  background: linear-gradient(135deg, #f6f9fc, #eef3fa);
+}
+
+.insight-list {
+  display: grid;
+  gap: var(--spacing-2xl);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.insight-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-md);
+  border: var(--divider-value);
+  background: var(--color-surface);
+}
+
+.insight-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.insight-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.post-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.contact-grid {
+  display: grid;
+  gap: var(--spacing-2xl);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: var(--spacing-2xl);
+}
+
+.contact-card {
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-md);
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+}
+
+.contact-card .form-input {
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  border: 1px solid var(--color-border);
+}
+
+.simple-list {
+  list-style: disc;
+  padding-left: var(--spacing-2xl);
+  color: var(--color-on-surface-secondary);
+}
+
+@media (max-width: 767px) {
+  .page-hero {
+    padding-top: var(--spacing-3xl);
+  }
+}

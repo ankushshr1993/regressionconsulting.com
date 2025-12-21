@@ -1,25 +1,24 @@
 import React from 'react'
-
 import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
 
+import Layout from '../components/layout'
 import './not-found.css'
 
-const NotFound = (props) => {
+const NotFound = () => {
   return (
-    <div className="not-found-container1">
-      <Helmet>
-        <title>404 - Not Found</title>
-      </Helmet>
-      <h3>OOPS! PAGE NOT FOUND</h3>
-      <div className="not-found-container2">
+    <Layout>
+      <div className="not-found-container1">
+        <Helmet>
+          <title>404 - Not Found</title>
+        </Helmet>
         <h1 className="not-found-text2">404</h1>
+        <p className="not-found-text3">The page you requested was not found.</p>
+        <Link to="/" className="btn btn-primary">
+          Return home
+        </Link>
       </div>
-      <div className="not-found-container3">
-        <h2 className="not-found-text3">
-          WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND
-        </h2>
-      </div>
-    </div>
+    </Layout>
   )
 }
 
