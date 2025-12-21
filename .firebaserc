@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "regressionconsultingwebsite",
+    "hosting": "regressionconsultingwebsite"
+  },
+  "targets": {},
+  "etags": {}
+}
