@@ -69,7 +69,7 @@ const Navigation = (props) => {
             </ul>
             <Link to="/contact">
               <div className="navigation-cta btn btn-primary btn-sm">
-                <span>Contact</span>
+                <span>Request briefing</span>
               </div>
             </Link>
           </div>
@@ -180,7 +180,7 @@ const Navigation = (props) => {
           <div className="navigation-mobile-footer">
             <Link to="/contact">
               <div className="navigation-mobile-cta btn btn-primary btn-lg">
-                <span>Get in Touch</span>
+                <span>Request briefing</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
