@@ -1,5 +1,5 @@
-import React from 'react';
-import ResponsiveHeroBanner from './responsive-hero-banner';
+import React from 'react'
+import ResponsiveHeroBanner from './responsive-hero-banner'
 
 const HeroDemo = () => {
   return (
@@ -19,7 +19,7 @@ const HeroDemo = () => {
       ctaButtonHref="#"
       partnersTitle="Partnering with leading space agencies worldwide"
     />
-  );
-};
+  )
+}
 
-export default HeroDemo;
+export default HeroDemo

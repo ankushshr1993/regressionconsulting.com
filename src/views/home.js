@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 
 import Layout from '../components/layout'
 import '../views/pages.css'
+import HeroDemo from '../components/ui/demo'
 
 const Home = () => {
   return (
@@ -15,6 +16,11 @@ const Home = () => {
           content="Operator-led technology execution. Governance, architecture clarity, and compliance-by-design for complex programs."
         />
       </Helmet>
+
+      <section aria-label="Hero banner demo">
+        <HeroDemo />
+      </section>
+
       <section className="hero-section" aria-labelledby="home-heading">
         <div className="page-hero">
           <div className="page-hero-content">
