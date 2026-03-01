@@ -1,0 +1,110 @@
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  color: var(--color-text, #fff);
+  background: var(--color-bg, #0a0a0a);
+}
+
+.webgl-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+  max-width: 56rem;
+  padding: 18vh 8vw 0;
+}
+
+.slide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.slide-title {
+  margin: 0;
+  font-family: var(--font-display, serif);
+  font-size: clamp(2.5rem, 8vw, 7rem);
+  line-height: 0.95;
+}
+
+.slide-description {
+  max-width: 35rem;
+  margin-top: 1rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--color-text-muted, rgba(255, 255, 255, 0.8));
+}
+
+.slide-number,
+.slide-total {
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.9rem;
+  color: var(--color-text-light, rgba(255, 255, 255, 0.6));
+}
+
+.slide-number {
+  left: 2rem;
+}
+
+.slide-total {
+  right: 2rem;
+}
+
+.slides-navigation {
+  position: absolute;
+  z-index: 2;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.slide-nav-item {
+  cursor: pointer;
+  border-radius: 0.7rem;
+  padding: 0.65rem 0.8rem;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.slide-nav-title {
+  font-size: 0.78rem;
+}
+
+.slide-progress-line {
+  height: 2px;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.slide-progress-fill {
+  width: 0;
+  height: 100%;
+  background: var(--color-accent, #d4af37);
+  transition: width 0.1s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .slides-navigation {
+    grid-template-columns: 1fr;
+  }
+}
